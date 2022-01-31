@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <TextBox x:Name="textBoxName" HorizontalAlignment="Left" Height="23" Margin="236,83,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.129,0.134"/>
+        <TextBox x:Name="textBoxPassW" HorizontalAlignment="Left" Height="23" Margin="236,142,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label" Content="Felhasznalo név" HorizontalAlignment="Left" Margin="236,52,0,0" VerticalAlignment="Top" RenderTransformOrigin="4.218,-5.913"/>
+        <Label x:Name="label1" Content="Jelszó" HorizontalAlignment="Left" Margin="236,111,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.337,0.99"/>
+        <Button x:Name="button" Content="Bejelentkezés" HorizontalAlignment="Left" Margin="254,195,0,0" VerticalAlignment="Top" Width="75"/>
+
     </Grid>
 </Window>
