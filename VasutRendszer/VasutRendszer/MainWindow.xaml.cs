@@ -29,7 +29,7 @@ namespace VasutRendszer
         {
             if (textBoxName.Text == "Peti" && textBoxPassW.Text == "Peti")
             {
-                
+                VasutRendszer.Bejelentkezve bejelentkezve 
             }
         }
     }
