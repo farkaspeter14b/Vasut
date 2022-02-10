@@ -24,13 +24,8 @@ namespace VasutRendszer
         {
             InitializeComponent();
         }
+        
 
-        public private void button_Click(object sender, RoutedEventArgs e)
-        {
-            if (textBoxName.Text == "Peti" && textBoxPassW.Text == "Peti")
-            {
-                VasutRendszer.Bejelentkezve bejelentkezve 
-            }
-        }
+        
     }
 }
