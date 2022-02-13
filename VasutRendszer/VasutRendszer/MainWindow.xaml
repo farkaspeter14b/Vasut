@@ -5,13 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VasutRendszer"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Activated="Window_Activated">
     <Grid>
-        <TextBox x:Name="textBoxName" HorizontalAlignment="Left" Height="23" Margin="236,83,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.129,0.134"/>
-        <TextBox x:Name="textBoxPassW" HorizontalAlignment="Left" Height="23" Margin="236,142,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="label" Content="Felhasznalo név" HorizontalAlignment="Left" Margin="236,52,0,0" VerticalAlignment="Top" RenderTransformOrigin="4.218,-5.913"/>
-        <Label x:Name="label1" Content="Jelszó" HorizontalAlignment="Left" Margin="236,111,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.337,0.99"/>
-        <Button x:Name="button" Content="Bejelentkezés" HorizontalAlignment="Left" Margin="254,195,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
-
+        <Button x:Name="Login" Content="Bejelentkezés" HorizontalAlignment="Left" Margin="59,51,0,0" VerticalAlignment="Top" Width="75" Click="Login_Click"/>
+        <Label x:Name="label1" Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <StackPanel Orientation="Vertical"  HorizontalAlignment="Left" Height="331" Margin="414,10,0,0" VerticalAlignment="Top" Width="370">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Height="194" Margin="0" VerticalAlignment="Top" Width="370">
+                <StackPanel Height="184" Width="150" Margin="0">
+                    <Label x:Name="labelhonnan" Content="Honnan"/>
+                    <ListBox x:Name="listBoxHonnan" Height="100"/>
+                </StackPanel>
+                <StackPanel Height="184" Width="150" Margin="0">
+                    <Label x:Name="labelhova" Content="Hová"/>
+                    <ListBox x:Name="listBoxHova" Height="100"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Window>

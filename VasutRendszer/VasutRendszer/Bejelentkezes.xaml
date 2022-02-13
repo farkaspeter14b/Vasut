@@ -5,13 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VasutRendszer"
         mc:Ignorable="d"
-        Title="Bejelentkezve" Height="450" Width="800">
+        Title="Bejelentkezve" Height="450" Width="800" WindowStyle="ToolWindow">
     <Grid>
-        <TextBox x:Name="textBoxName" HorizontalAlignment="Left" Height="23" Margin="215,132,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.129,0.134"/>
-        <TextBox x:Name="textBoxPassW" HorizontalAlignment="Left" Height="23" Margin="215,191,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="label" Content="Felhasznalo név" HorizontalAlignment="Left" Margin="215,101,0,0" VerticalAlignment="Top" RenderTransformOrigin="4.218,-5.913"/>
-        <Label x:Name="label1" Content="Jelszó" HorizontalAlignment="Left" Margin="215,160,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.337,0.99"/>
-        <Button x:Name="button" Content="Bejelentkezés" HorizontalAlignment="Left" Margin="233,244,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="198*"/>
+            <ColumnDefinition Width="199*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="textBoxName" HorizontalAlignment="Left" Height="23" Margin="50,74,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.129,0.134"/>
+        <TextBox x:Name="textBoxPassW" HorizontalAlignment="Left" Height="23" Margin="50,133,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label" Content="Felhasznalo név" HorizontalAlignment="Left" Margin="50,43,0,0" VerticalAlignment="Top" RenderTransformOrigin="4.218,-5.913" Height="26" Width="93"/>
+        <Label x:Name="label1" Content="Jelszó" HorizontalAlignment="Left" Margin="50,102,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.337,0.99" Height="26" Width="42"/>
+        <Button x:Name="LogIn" Content="Bejelentkezés" HorizontalAlignment="Left" Margin="68,186,0,0" VerticalAlignment="Top" Width="75" Click="button_Click" Height="19"/>
+        <Button x:Name="Registration" Content="Regisztráció" HorizontalAlignment="Left" Margin="121,186,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1" Height="19" Click="Registration_Click"/>
+        <TextBox x:Name="textBoxNameNew" HorizontalAlignment="Left" Height="23" Margin="99,87,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.129,0.134" Grid.Column="1"/>
+        <TextBox x:Name="textBoxPassWNew" HorizontalAlignment="Left" Height="23" Margin="99,146,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <Label x:Name="label_Copy" Content="Felhasznalo név" HorizontalAlignment="Left" Margin="99,56,0,0" VerticalAlignment="Top" RenderTransformOrigin="4.218,-5.913" Height="26" Width="93" Grid.Column="1"/>
+        <Label x:Name="label1_Copy" Content="Jelszó" HorizontalAlignment="Left" Margin="99,115,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.337,0.99" Height="26" Width="42" Grid.Column="1"/>
 
     </Grid>
 </Window>

@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.IO;
+using VasutRendszer.Classes;
 
 namespace VasutRendszer
 {
@@ -22,6 +24,40 @@ namespace VasutRendszer
         public Bejelentkezve()
         {
             InitializeComponent();
+        }
+
+        private void Registration_Click(object sender, RoutedEventArgs e)
+        {
+            string username = textBoxNameNew.Text.Trim();
+            string password = textBoxPassWNew.Text;
+            if (!string.IsNullOrEmpty(username) && !string.IsNullOrEmpty(password))
+            {
+                UserHelper help = new UserHelper();
+                if (!help.AddUser(username,password))
+                {
+                    MessageBox.Show("Hiba", "A felhasználó már létezik");
+                }
+                else
+                {
+                    MessageBox.Show("Sikeres volt a regisztráció");
+                }
+            }
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            string username = textBoxName.Text;
+            string password = textBoxPassW.Text;
+            UserHelper help = new UserHelper();
+            if (help.SearchUser(username,password) == true)
+            {
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Hibás jészó vagy felhasználónév");
+            }
+
         }
     }
 }
