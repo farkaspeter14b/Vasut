@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.IO;
+using VasutRendszer.Classes;
 
 namespace VasutRendszer
 {
@@ -26,15 +27,23 @@ namespace VasutRendszer
             InitializeComponent();
         }
 
-        private void Window_Activated(object sender, EventArgs e)
+        private void Login_Click(object sender, RoutedEventArgs e)
         {
             
         }
 
-        private void Login_Click(object sender, RoutedEventArgs e)
+        private void Jegy_Click(object sender, RoutedEventArgs e)
         {
-            Bejelentkezve bejelentkezes = new Bejelentkezve();
-            bejelentkezes.ShowDialog();
+
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            if (BI.Instance.vanbejelentkezes == false)
+            {
+                Bejelentkezve bejelentkezes = new Bejelentkezve();
+                bejelentkezes.ShowDialog();
+            }
         }
     }
 }

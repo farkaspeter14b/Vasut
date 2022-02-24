@@ -70,6 +70,12 @@
     <Compile Include="Bejelentkezes.xaml.cs">
       <DependentUpon>Bejelentkezes.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Classes\BI.cs" />
+    <Compile Include="Classes\City.cs" />
+    <Compile Include="Classes\CityHelper.cs" />
+    <Compile Include="Classes\Railway.cs" />
+    <Compile Include="Classes\RailwayHelper.cs" />
+    <Compile Include="Classes\Tree.cs" />
     <Compile Include="Classes\User.cs" />
     <Compile Include="Classes\UserHelper.cs" />
     <Compile Include="MainWindow.xaml.cs">

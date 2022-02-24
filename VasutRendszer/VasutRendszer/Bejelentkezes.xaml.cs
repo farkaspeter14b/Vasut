@@ -51,6 +51,7 @@ namespace VasutRendszer
             UserHelper help = new UserHelper();
             if (help.SearchUser(username,password) == true)
             {
+                BI.Instance.vanbejelentkezes = true;
                 this.Close();
             }
             else
@@ -58,6 +59,14 @@ namespace VasutRendszer
                 MessageBox.Show("Hibás jészó vagy felhasználónév");
             }
 
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (BI.Instance.vanbejelentkezes == false)
+            {
+                e.Cancel = true;
+            }
         }
     }
 }

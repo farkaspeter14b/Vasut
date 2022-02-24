@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VasutRendszer"
         mc:Ignorable="d"
-        Title="Bejelentkezve" Height="450" Width="800" WindowStyle="ToolWindow">
+        Title="Bejelentkezve" Height="450" Width="800" WindowStyle="ToolWindow" WindowStartupLocation="CenterScreen" Cursor="" Topmost="True" Closing="Window_Closing">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="198*"/>
